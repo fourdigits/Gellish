@@ -1,0 +1,244 @@
+body {
+color: black;
+font-family: Verdana, Arial, Geneva;
+font-weight: normal;
+background-color: rgb(230,264,230);
+font-size: 14px;
+}
+h1 {
+background-color: yellow;
+font-size: 130%;
+text-decoration: underline;
+text-align: center;
+}
+h3 {
+background-color: yellow;
+font-size: 80%;
+text-decoration: underline;
+text-align: center;
+}
+.par {
+color: blue;
+padding: 5px;
+line-height: 1.5em;
+border: black 2px solid;
+}
+.imagec {
+width: 100px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 3px;
+background-color: silver;
+border-color: black;
+border-width: 2px;
+border-style: solid;
+}
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+/* Define the navigation bar */
+#navigate {
+	background-color: darkgreen;
+	height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	font: Tahoma;
+}
+
+#navigate ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+#navigate li {
+	display: inline;
+	padding: 12px;
+	vertical-align: middle;
+}
+#navigate a {
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times;
+//	background-color: #5c905e;
+	color: white;
+//	display: block;
+	padding: 6px 6px 6px 6px;
+//	width: 95px;
+	margin: 2;
+//	border: 2px solid red;
+//	border-radius: 5px;
+	vertical-align: middle;
+}
+#navigate a:hover {
+	background-color: #d3d3d3;
+	color: black;
+}
+
+
+/* Define TAB pages
+SetSet height of body and the document to 100% to enable "full page tabs" 
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+*/
+
+/* Style tab links */
+.tablink {
+  background-color: #888;
+  color: ccf;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  border: 1px solid #ccc;
+/*  height: 100%;*/
+}
+
+#Network {background-color: cfc;}
+#Taxonomy {background-color: cfc;}
+#Product {background-color: bfb;}
+#Documents {background-color: afa;}
+#Activities {background-color: 9f9;}
+
+
+/* Define a view window grid 
+.views {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #cfc;
+	border: 1px solid;
+	min-height: 300px;
+	width: 100%;
+}
+*/
+
+/* =========== Query page =======================
+/* Define the general layout of class button */
+.button {
+	background: #e7e7e7;
+	border: 1px solid;
+	border-radius: 3px;
+	font: 700 13px Helvetica, Arial;
+	height: 35px;
+	line-height: 28px;
+	padding: 2px 10px;
+	text-align: center;
+//	margin-right: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+//	width: 300px;
+	display: inline;
+}
+/* li {
+	display: block;
+}
+a {
+	color: #666;
+	text-decoration: none;
+	float: left;
+} 
+a:hover {
+	color: #000;
+	backgr ound-color: dadada;
+}*/
+.q_wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 4px;
+}
+
+.q_wrapper > div{
+	padding: 0;
+}
+#case {
+	background: #eee;
+	min-width: 150px;
+}
+#first_char {
+	background: #eee;
+}
+#lang_label {
+	background: #eee;
+	min-width: 120px;
+}
+label[for=reply_text] {
+	vertical-align: middle
+}
+#reply_lang {
+	height: 25px;
+	vertical-align: middle
+}
+label[for=def] {
+	vertical-align: top
+}
+textarea {
+	width: 100%;
+	height: 60px;
+	/*min-width: 500px, auto;*/
+}
+.aliases {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #cfc;
+	border: 1px solid;
+	min-height: 75px;
+	width: 60%;
+}
+.options {
+	display: grid;
+	grid-template-columns: 1fr repeat(4, 2fr);
+	background-color: #bfb;
+	border: 1px solid;
+	min-height: 300px;
+	height: 100%;
+	width: 100%;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+/*    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+	font-size: 12px;
+    color: #dfd;
+    text-align: center;
+    padding: 5px 2px;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Communicator_style.css">
+</head>
+<body>
+<h3> Search </h3>
+<div class="q_wrapper">
+	<div id="case">
+	<form id="check box-1" action="/action_page.php" method="get">
+		<input type="checkbox" name="case_sens" value="cs" checked > Case Sensitive<br>
+	</form>
+	</div>
+
+	<br>
+	<div id="lang_label">
+	<label for="reply_text">Reply language:</label>
+	</div>
+	<div id="reply_field">
+	<form id="lang" action="" method="">
+	<select id="reply_lang"
+		onchange="setReplyLang()">
+		<option value="English">English
+		<option value="Dutch">Nederlands
+		<option value="Ameriacan">American
+		<option value="Chinese">Chinese
+		<option value="French">Francais
+		<option value="German">Deutsch
+	</select>
+	</form>
+	</div>
+
+	<div id="button-1">
+	<form id="but-1" action="" method="">
+	<ul id="confirm">
+		<li><a class="button" href="">Confirm</a></li>
+	</ul>
+	</form>
+	</div>
+	
+	<div id="button-2">
+	<form id="but-2" action="" method="">
+	<ul id="close">
+		<li><a class="button" href="">Close</a></li>
+	</ul>
+	</form>
+	</div>
+	
+	</div id="first_char">
+	<form id="check box-2" action="/action_page.php" method="get">
+		<input type="checkbox" name="fchar" value="fc" checked> First Char Match<br>
+	</form>
+	</div>
+
+</div>
+<br>
+
+<form id="search" action="" method="">
+<label for="Search_term">Search term &nbsp &nbsp &nbsp UID</label>
+<input type="text" id="uid" name="" value=""> </br>
+<input type="text" id="search_term" name="" value="?"> </br>
+
+<br>
+<label for="def">Definition of concept:</label>
+<textarea name="definition"> </textarea
+</form>
+
+<form id="aliases">
+<label for="alias_lbl">Aliases:</label>
+<div class="aliases">
+	<div>Term</div>
+	<div>Alias type</div>
+	<div>list</div>
+</div>
+
+<form id="options">
+<label for="options_lbl">Select one of the following options:</label>
+<div class="options">
+	<div>UID</div>
+	<div>Name</div>
+	<div>Kind</div>
+	<div>Community</div>
+	<div>Language</div>
+	<div>list</div>
+</div>
+
+</body>
+</html>

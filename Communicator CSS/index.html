@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta name="description" content="User interface for the Gellish Communicator application, including its taxonomic dictionay and search engine."/>
+<meta name] "viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Gellish, Formal English, Formeel Nederlands, formalized language, semantic modeling, application, taxonomy, dictionary"/>
+<meta http-equiv="author" content="Andries van Renssen" />
+<meta http-equiv="content-language" content="en-nl">
+
+<link rel="stylesheet" type="text/css" href="Communicator_style.css">
+
+<script src="Communicator.js"></script>
+
+</head>
+<body>
+<h1> The Gellish Communicator </h1>
+
+<div id="navigate">
+<ul>
+	<li><a href="" class="tooltip">Login/Register<span class="tooltiptext">The Communicator will only function after registration and login</span></a></li>
+	
+	<li><a href="" class="tooltip">Read file<span class="tooltiptext">Files shall be in Gellish Expression Format in UTF-8 encoding in CSV</span></a></li>
+	
+	<li><a href="Search_view.html" 
+	class="tooltip">Search<span class="tooltiptext">Search for concepts by name or uid</span></a></li>
+	
+	<li><a href="http://usermanual.gellish.net" target="_blank"
+	class="tooltip">User manual<span class="tooltiptext">A wiki guide on the usage of the Communicator</span></a></li>
+</ul>
+</div>
+
+<!--
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+-->
+
+<form id="main_view" action="" method="">
+<label for="gui_lang_label" 
+	class="tooltip">GUI language:<span class="tooltiptext">Set the GUI and Search language. The reply language may differ and can be set in the Search window</span></label>
+<select id="gui_lang"
+	onchange="set_language()">
+	<option value="English">English
+	<option value="Nederlands">Nederlands
+</select>
+</form>
+<p id="demo"></p>
+
+<label for="results_lbl">Search results:</label><br>
+
+<!-- Create tab pages ======================== -->
+
+<button class="tablink" onclick="openPage('Network', this, '#cfc')" id="defaultOpen">Network</button>
+<button class="tablink" onclick="openPage('Taxonomy', this, '#cfc')">Taxonomy</button>
+<button class="tablink" onclick="openPage('Product', this, '#bfb')">Product</button>
+<button class="tablink" onclick="openPage('Documents', this, '#afa')">Documents</button>
+<button class="tablink" onclick="openPage('Activities', this, '#9f9')">Activities</button>
+
+<div id="Network" class="tabcontent">
+  <h2>Network view</h2>
+  <p>Display of the relations with directly related objects, their classifiers and possibly their values and units of measures.</p>
+</div>
+
+<div id="Taxonomy" class="tabcontent">
+  <h2>Taxonomy view</h2>
+  <p>Display of the supertype-subtype hierarchy and the classified individual things.</p>
+</div>
+
+<div id="Product" class="tabcontent">
+  <h2>Product model view</h2>
+  <p>Display of a product and its components and their aspects.</p>
+</div>
+
+<div id="Documents" class="tabcontent">
+  <h2>Documents view</h2>
+  <p>Display of the documents that are related to the object in focus.</p>
+</div>
+
+<div id="Activities" class="tabcontent">
+  <h2>Activities view</h2>
+  <p>Display of the activities, processes and events, their relations.and involved objects.</p>
+</div>
+
+
+</body>
+</html>
